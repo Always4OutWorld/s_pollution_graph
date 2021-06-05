@@ -5,6 +5,7 @@ import {Provider} from 'react-redux';
 import { createStore, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import './index.css';
+import 'w3-css/w3.css';
 import App from './components/App';
 import reducers from './redux/reducer';
 import intialValue from './redux/initalValue';

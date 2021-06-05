@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import normalRoutes from '../routes/route';
+import Main from './Main';
 
 
 function App() {
@@ -16,9 +17,7 @@ function App() {
             key={eachRoute.url}
             path={eachRoute.url}
             exact
-            render={props => (
-              <eachRoute.component props={props} />
-            )}
+            render={props => <Main props={props} eachRoute={eachRoute} />}
           />
         ))}
         </Switch>

@@ -7,7 +7,9 @@ import HOMEPAGE from '../components/Home/index';
 const normalRoutes = [
     {
       url: HOME_URL,
-      component: HOMEPAGE
+      component: {
+        default: HOMEPAGE,
+      },
     },
 ];
 
