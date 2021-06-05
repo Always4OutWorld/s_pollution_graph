@@ -3,7 +3,7 @@ import {
 AppBar, Avatar, Grid
 } from '@material-ui/core';
 import {
-    LocalPostOffice
+    Fireplace
 } from '@material-ui/icons';
 import {Toolbar, Typography} from '@material-ui/core';
 
@@ -14,7 +14,10 @@ const Main = ({ eachRoute, props }) => {
                 <Grid item xs={12}>
                     <AppBar>
                         <Toolbar>
-                            <Avatar><LocalPostOffice /></Avatar>
+                            <Avatar style={{
+                                color: 'black',
+                                background: 'white'
+                            }} ><Fireplace /></Avatar>
                             <Typography variant="h6" className="w3-padding">
                                 City Pollution Graph
                             </Typography>
