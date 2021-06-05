@@ -1,6 +1,6 @@
 import React from 'react';
 const HOMEPAGE = () => (
-    <div>intial</div>
+    <div className="color">intial</div>
   );
 
   export default HOMEPAGE;

@@ -1,3 +1,11 @@
-.mainHead {
-  text-align: center;
+.maincontainer {
+  margin-top: 64px;
+}
+
+.main_container2 {
+  margin-top: 64px;
+}
+
+.color { 
+  background-color: red;
 }
