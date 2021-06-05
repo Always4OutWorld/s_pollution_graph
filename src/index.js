@@ -1,18 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import {Provider} from 'react-redux';
 import { createStore, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import {Provider} from 'react-redux';
 import './index.css';
 import App from './components/App';
 import reducers from './redux/reducer';
 import intialValue from './redux/initalValue';
 
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
 const store = createStore(
-  intialValue,
   reducers,
-  ((window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__)|| compose)(applyMiddleware(thunk))
+  intialValue,
+  composeEnhancers(applyMiddleware(thunk))
 );
 
 const APP_ROUTE = () => (
