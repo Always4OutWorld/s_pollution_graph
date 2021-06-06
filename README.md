@@ -1,4 +1,4 @@
-# s_pollution_graph
+# I_pollution_graph
 
 
 InterView
