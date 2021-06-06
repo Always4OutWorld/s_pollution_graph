@@ -1,0 +1,2 @@
+export const OUTPUTDATEFORMAT = "DD-MM-YYYY";
+export const SAVEDATEFORMAT = "YYYY-MM-DD";
