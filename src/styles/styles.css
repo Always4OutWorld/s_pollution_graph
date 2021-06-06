@@ -9,3 +9,34 @@
 .color { 
   background-color: red;
 }
+
+.homecontainer {
+  height: 100%;
+  padding: 20px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.graphPaper { 
+  min-height: 60vh;
+  max-height: 90vh;
+}
+
+.graphPaper2 { 
+  max-height: 90vh;
+}
+
+.errortext {
+  color: red;
+  font-size: 10px;
+}
+
+.countryStyle {
+  font-weight: 900 !important;
+}
+
+.cityValue { 
+  font-weight: 900 !important;
+}
