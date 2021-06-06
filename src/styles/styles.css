@@ -39,4 +39,5 @@
 
 .cityValue { 
   font-weight: 900 !important;
+  overflow: auto;
 }
