@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-AppBar, Avatar, Grid
+AppBar, Avatar, Grid, Tooltip
 } from '@material-ui/core';
 import {
     Fireplace
@@ -14,18 +14,27 @@ const Main = ({ eachRoute, props }) => {
                 <Grid item xs={12}>
                     <AppBar>
                         <Toolbar>
-                            <Avatar style={{
+                            <Avatar variant="square" style={{
                                 color: 'black',
                                 background: 'white'
                             }} ><Fireplace /></Avatar>
-                            <Typography variant="h6" className="w3-padding">
-                                City Pollution Graph
+                            <Typography variant="h6" style={{ width: '200px' }} className="w3-padding">
+                                Pollution Graph
                             </Typography>
+                            <Grid container justify="flex-end">
+                                <Grid item xs={4}>
+                                    <Tooltip title={process.env.REACT_APP_PRONAME} placement="left">
+                                        <Avatar className="w3-right" src={process.env.REACT_APP_PROPHOTO} />
+                                    </Tooltip>
+                                </Grid>
+                            </Grid>
                         </Toolbar>
                     </AppBar>
                 </Grid>
                 <Grid item xs={12} style={{
-                    marginTop: "64px"
+                    marginTop: "64px",
+                    maxHeight: "90vh",
+                    minHeight: "90vh",
                 }}>
                     <eachRoute.component.default props={props} />
                 </Grid>
